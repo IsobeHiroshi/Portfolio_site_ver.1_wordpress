@@ -1,0 +1,144 @@
+body {
+  animation: fadeIn 1s ease 0s 1 normal;
+  font-family: Roboto;
+}
+
+/* ==============================
+  Styling for front page
+============================== */
+
+body.home {
+  h1 {
+    font-family: Cinzel;
+    text-align: center;
+    #title1stRow {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 0.5rem;
+    }
+    #title2ndRow {
+      display: block;
+      font-size: 2.3rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  .main-image-container {
+    width: 100%;
+    height: 40vh;
+    .main-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 30%;
+    }
+  }
+  nav ul {
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 50px 0 0;
+    position: relative;
+    overflow: hidden;
+    li {
+      margin-bottom: 40px;
+      height: 50px;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/red-brush-line.png);
+        background-size: 35%;
+        background-repeat: no-repeat;
+        background-position: 55% 0%;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+        display: inline-block;
+        transform: translateY(10%);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* ==============================
+  Styling for Header
+============================== */
+
+.site-header {
+  h1 {
+    width: 150px;
+    padding-left: 15px;
+    margin-left: 30px;
+    line-height: 50px;
+    height: 65px;
+    background-image: url(./images/red-brush-line.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+  }
+}
+
+/* ==============================
+  Styling for Contact Page
+============================== */
+
+body.page {
+  padding-bottom: 100px;
+  div.contact-content {
+    width: 80%;
+    margin: 50px auto 80px;
+    p {
+      line-height: 150%;
+    }
+  }
+  ul.contact-icons {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    width: 70%;
+    margin: 0 auto 50px;
+    li {
+      text-align: center;
+      a,
+      span {
+        font-size: 6rem;
+      }
+      a.fas {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+a.home-button {
+  color: white;
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $accent-color;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}

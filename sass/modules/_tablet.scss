@@ -1,0 +1,62 @@
+/* ==============================
+  Styling for front page
+============================== */
+
+body.home {
+  h1 {
+    margin-top: 60px;
+  }
+  .main-image-container {
+    width: 70%;
+    margin: 60px auto 60px;
+  }
+  nav ul li {
+    &::after {
+      background-size: 23%;
+      background-position: 53% 0;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* ==============================
+  Styling for Header
+============================== */
+
+.site-header {
+  h1 {
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+}
+
+/* ==============================
+  Styling for Contact Page
+============================== */
+
+body.page {
+  div.contact-content {
+    p {
+      font-size: 1.3rem;
+      line-height: 150%;
+    }
+  }
+  ul.contact-icons {
+    width: 50%;
+    margin: 0 auto 80px;
+    li {
+      a,
+      span {
+        font-size: 8rem;
+      }
+    }
+  }
+}
+
+a.home-button {
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+}

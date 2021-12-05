@@ -1,0 +1,39 @@
+/* ===================================
+    Styling for Contact Page Icons
+=================================== */
+
+body.page {
+  a[href^="https://github.com"]::before
+  {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+    color: black;
+  }
+  a[href^="https://www.linkedin.com"]::before
+  {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f08c";
+    color: black;
+  }
+  a[href^="https://dev.to"]::before
+  {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    content: "\f6cc";
+    color: black;
+  }
+}

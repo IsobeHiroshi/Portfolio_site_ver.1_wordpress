@@ -1,0 +1,21 @@
+/*
+Theme Name: finalhiroshiisobe
+Author: Hiroshi Isobe
+*/
+@import "modules/variables";
+/* Font Awesome */
+@import "modules/font-awesome";
+
+@import "modules/mobile";
+
+@media (min-width: 768px) {
+  @import "modules/tablet";
+}
+
+@media (min-width: 992px) {
+  @import "modules/desktop-small";
+}
+
+@media (min-width: 1200px) {
+  @import "modules/desktop-large";
+}
