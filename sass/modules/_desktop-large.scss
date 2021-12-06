@@ -61,6 +61,27 @@ body.home {
 }
 
 /* ==============================
+  Styling for Home button
+============================== */
+
+a.home-button {
+  font-size: 1.2rem;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s 0s ease;
+  }
+}
+
+/* ==============================
+  Styling for About Page
+============================== */
+
+div.about-field {
+  width: 60%;
+  margin: 70px auto 100px;
+}
+
+/* ==============================
   Styling for Contact Page
 ============================== */
 
@@ -89,13 +110,6 @@ body.page {
         color: black;
         text-decoration: none;
       }
-    }
-  }
-  a.home-button {
-    font-size: 1.2rem;
-    &:hover {
-      transform: scale(1.2);
-      transition: all 0.5s 0s ease;
     }
   }
 }
