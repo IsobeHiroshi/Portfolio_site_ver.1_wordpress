@@ -56,8 +56,9 @@ body.home {
       a {
         text-decoration: none;
         color: black;
-        letter-spacing: 0.2rem;
-        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
         display: inline-block;
         transform: translateY(10%);
       }
@@ -127,6 +128,8 @@ div.about-field {
   div.about-field-content {
     margin-left: 25px;
     div.career-detail {
+      width: 90%;
+      margin: 40px auto 0;
       article.career {
         display: flex;
         align-items: center;
@@ -195,6 +198,74 @@ body.page {
     }
   }
 }
+
+/* ==============================
+  Styling for Works Page
+============================== */
+div.past-works-main {
+  margin: 60px auto 60px;
+  article.past_work {
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    div.work-thumbnail {
+      height: 100%;
+      margin-right: 20px;
+      a img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+          0 2px 4px 0 rgba(0, 0, 0, 0.1),
+          inset 0 0 0 0 rgba(255, 255, 255, 0.05);
+      }
+    }
+    div.work-summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h2.work-name {
+        margin-top: 0px;
+        background-color: black;
+        height: 50px;
+        border-radius: 20px 0;
+        a {
+          display: block;
+          font-weight: 400;
+          font-size: 1rem;
+          color: white;
+          line-height: 50px;
+          text-align: center;
+        }
+      }
+      p.work-tagline {
+        margin: 0 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+    div.summary-footer {
+      line-height: 120%;
+      margin-left: 10px;
+      i {
+        margin-right: 3px;
+        color: $accent-color;
+      }
+      a {
+        color: black;
+        font-size: 0.8rem;
+      }
+      div.category-wrapper {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* ==============================
+  Styling for Home Button
+============================== */
 
 a.home-button {
   color: white;

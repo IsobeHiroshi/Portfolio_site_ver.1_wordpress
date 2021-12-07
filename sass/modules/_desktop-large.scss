@@ -2,6 +2,11 @@ body,
 html {
   margin: 0;
 }
+
+/* ==============================
+  Styling for front page
+============================== */
+
 body.home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -44,6 +49,9 @@ body.home {
       }
       &:hover::after {
         clip-path: inset(0 0 0 0);
+      }
+      a {
+        font-size: 2rem;
       }
     }
   }
@@ -88,7 +96,15 @@ div.about-pic-container {
 
 div.about-field {
   width: 60%;
-  margin: 70px auto 100px;
+  margin: 70px auto 40px;
+  div.about-field-content {
+    div.career-detail {
+      width: 90%;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
 }
 
 /* ==============================
@@ -123,3 +139,11 @@ body.page {
     }
   }
 }
+
+/* ==============================
+  Styling for Works Page
+============================== */
+
+/* ==============================
+  Styling for Home Button
+============================== */

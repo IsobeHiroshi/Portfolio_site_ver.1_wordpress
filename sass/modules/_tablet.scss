@@ -16,7 +16,7 @@ body.home {
       background-position: 53% 0;
     }
     a {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
 }
@@ -38,6 +38,12 @@ body.home {
 
 div.about-field {
   width: 70%;
+  div.about-field-content {
+    div.career-detail {
+      width: 80%;
+      margin: 60px auto 0;
+    }
+  }
 }
 
 /* ==============================
@@ -62,6 +68,14 @@ body.page {
     }
   }
 }
+
+/* ==============================
+  Styling for Works Page
+============================== */
+
+/* ==============================
+  Styling for Home Button
+============================== */
 
 a.home-button {
   width: 120px;

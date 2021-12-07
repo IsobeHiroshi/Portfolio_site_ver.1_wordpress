@@ -105,8 +105,9 @@ body.home nav ul li::after {
 body.home nav ul li a {
   text-decoration: none;
   color: black;
-  letter-spacing: 0.2rem;
-  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
   display: inline-block;
   transform: translateY(10%);
 }
@@ -172,6 +173,11 @@ div.about-field h2.about-field-title {
 
 div.about-field div.about-field-content {
   margin-left: 25px;
+}
+
+div.about-field div.about-field-content div.career-detail {
+  width: 90%;
+  margin: 40px auto 0;
 }
 
 div.about-field div.about-field-content div.career-detail article.career {
@@ -251,6 +257,82 @@ body.page ul.contact-icons li a.fas {
   text-decoration: none;
 }
 
+/* ==============================
+  Styling for Works Page
+============================== */
+div.past-works-main {
+  margin: 60px auto 60px;
+}
+
+div.past-works-main article.past_work {
+  height: 250px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+div.past-works-main article.past_work div.work-thumbnail {
+  height: 100%;
+  margin-right: 20px;
+}
+
+div.past-works-main article.past_work div.work-thumbnail a img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 0 rgba(255, 255, 255, 0.05);
+}
+
+div.past-works-main article.past_work div.work-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.past-works-main article.past_work div.work-summary h2.work-name {
+  margin-top: 0px;
+  background-color: black;
+  height: 50px;
+  border-radius: 20px 0;
+}
+
+div.past-works-main article.past_work div.work-summary h2.work-name a {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+
+div.past-works-main article.past_work div.work-summary p.work-tagline {
+  margin: 0 10px 20px;
+  font-size: 0.9rem;
+}
+
+div.past-works-main article.past_work div.summary-footer {
+  line-height: 120%;
+  margin-left: 10px;
+}
+
+div.past-works-main article.past_work div.summary-footer i {
+  margin-right: 3px;
+  color: #c5272d;
+}
+
+div.past-works-main article.past_work div.summary-footer a {
+  color: black;
+  font-size: 0.8rem;
+}
+
+div.past-works-main article.past_work div.summary-footer div.category-wrapper {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+  Styling for Home Button
+============================== */
 a.home-button {
   color: white;
   display: block;
@@ -281,7 +363,7 @@ a.home-button {
     background-position: 53% 0;
   }
   body.home nav ul li a {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   /* ==============================
   Styling for Header
@@ -295,6 +377,10 @@ a.home-button {
 ============================== */
   div.about-field {
     width: 70%;
+  }
+  div.about-field div.about-field-content div.career-detail {
+    width: 80%;
+    margin: 60px auto 0;
   }
   /* ==============================
   Styling for Contact Page
@@ -311,6 +397,12 @@ a.home-button {
   body.page ul.contact-icons li span {
     font-size: 8rem;
   }
+  /* ==============================
+  Styling for Works Page
+============================== */
+  /* ==============================
+  Styling for Home Button
+============================== */
   a.home-button {
     width: 120px;
     height: 60px;
@@ -323,6 +415,9 @@ a.home-button {
   html {
     margin: 0;
   }
+  /* ==============================
+  Styling for front page
+============================== */
   body.home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -367,6 +462,9 @@ a.home-button {
   body.home nav ul li:hover::after {
     clip-path: inset(0 0 0 0);
   }
+  body.home nav ul li a {
+    font-size: 2rem;
+  }
   /* ==============================
   Styling for Header
 ============================== */
@@ -398,7 +496,13 @@ a.home-button {
   }
   div.about-field {
     width: 60%;
-    margin: 70px auto 100px;
+    margin: 70px auto 40px;
+  }
+  div.about-field div.about-field-content div.career-detail {
+    width: 90%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 2fr);
   }
   /* ==============================
   Styling for Contact Page
@@ -429,5 +533,11 @@ a.home-button {
     color: black;
     text-decoration: none;
   }
+  /* ==============================
+  Styling for Works Page
+============================== */
+  /* ==============================
+  Styling for Home Button
+============================== */
 }
 /*# sourceMappingURL=style.css.map */
