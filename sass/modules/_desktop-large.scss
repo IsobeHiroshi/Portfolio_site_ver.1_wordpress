@@ -76,6 +76,16 @@ a.home-button {
   Styling for About Page
 ============================== */
 
+div.about-pic-container {
+  height: 300px;
+  margin-top: 50px;
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+  }
+}
+
 div.about-field {
   width: 60%;
   margin: 70px auto 100px;
