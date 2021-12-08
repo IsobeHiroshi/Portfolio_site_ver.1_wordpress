@@ -13,14 +13,19 @@ body.error404 {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -60%);
       h1 {
         margin-left: 10px;
-        padding-left: 20px;
+        padding-left: 30px;
         letter-spacing: 0.2rem;
         font-size: 3.5rem;
         width: 180px;
         height: 70px;
+        transform: rotate(-5deg);
+      }
+      p {
+        margin-bottom: 40px;
+        text-align: center;
       }
     }
   }

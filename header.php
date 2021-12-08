@@ -22,7 +22,10 @@
       </h1>
       <?php
       if ( is_404() ) :
-        echo "Sorry, the page not found...";
+      ?>
+      <p>Sorry, the page not found...</p>
+      <a class="home-button" href="<?php echo home_url(); ?>">HOME</a>
+      <?php
       endif;
       ?>
     </div>
