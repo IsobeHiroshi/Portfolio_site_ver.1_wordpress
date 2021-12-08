@@ -4,6 +4,29 @@ body {
 }
 
 /* ==============================
+  Styling for 404 page
+============================== */
+
+body.error404 {
+  header.site-header {
+    div.title-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        margin-left: 10px;
+        padding-left: 20px;
+        letter-spacing: 0.2rem;
+        font-size: 3.5rem;
+        width: 180px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+/* ==============================
   Styling for front page
 ============================== */
 
@@ -93,6 +116,25 @@ body.home {
     background-repeat: no-repeat;
     background-position: 0% 100%;
   }
+}
+
+/* ==============================
+  Styling for Home Button
+============================== */
+
+.home-button {
+  color: white;
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $accent-color;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 /* ==============================
@@ -202,20 +244,22 @@ body.page {
 /* ==============================
   Styling for Works Page
 ============================== */
+
 div.past-works-main {
   margin: 60px auto 60px;
   article.past_work {
     height: 250px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 70px;
     display: flex;
     align-items: center;
+    justify-content: center;
     div.work-thumbnail {
       height: 100%;
       margin-right: 20px;
       a img {
         height: 100%;
-        width: auto;
+        width: 140px;
         object-fit: cover;
         box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
           0 2px 4px 0 rgba(0, 0, 0, 0.1),
@@ -225,16 +269,18 @@ div.past-works-main {
     div.work-summary {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
+      height: 100%;
       h2.work-name {
-        margin-top: 0px;
+        margin-top: 10%;
         background-color: black;
         height: 50px;
+        border-bottom: 6px solid $accent-color;
         border-radius: 20px 0;
         a {
           display: block;
           font-weight: 400;
-          font-size: 1rem;
+          font-size: 0.9rem;
           color: white;
           line-height: 50px;
           text-align: center;
@@ -264,19 +310,68 @@ div.past-works-main {
 }
 
 /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
 
-a.home-button {
-  color: white;
-  display: block;
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  margin: 0 auto;
-  background-color: $accent-color;
-  border-radius: 15px;
-  text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+body.single-past_work {
+  margin: 0;
+  padding-bottom: 80px;
+  h2 {
+    margin-top: 30px;
+    height: 55px;
+    line-height: 55px;
+    font-weight: 400;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-bottom: 6px solid $accent-color;
+  }
+  div.work-single-wrapper {
+    div.work-single-thumbnail {
+      width: 50%;
+      margin: 60px auto 40px;
+      box-shadow: 0 18px 50px -10px rgba(0, 0, 0, 0.2), 0 0 0 currentColor;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    a.work-url {
+      display: block;
+      background-color: black;
+      border-radius: 22px;
+      width: 50%;
+      height: 45px;
+      line-height: 45px;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+    }
+    p.open-up-new-window {
+      text-align: center;
+      font-size: 0.7rem;
+      margin-top: 15px;
+    }
+  }
+  div.work-detail {
+    width: 70%;
+    margin: 0 auto 90px;
+    p.work-single-tagline {
+      width: 100%;
+      margin: 60px auto 50px;
+      font-size: 1.4rem;
+    }
+    p.work-single-description {
+      width: 90%;
+      margin: 50px auto 70px;
+    }
+    p.work-detail-content {
+      width: 80%;
+      margin: 20px auto 50px;
+    }
+    h3.work-detail-heading {
+      font-size: 1.3rem;
+    }
+  }
 }

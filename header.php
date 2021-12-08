@@ -9,7 +9,22 @@
 <body <?php body_class(); ?>>
   <header class="site-header">
     <div class="title-container">
-      <h1><?php the_title(); ?></h1>
+      <h1>
+        <?php
+        if ( is_singular( 'past_work' ) ) :
+          echo "Works";
+        elseif ( is_404() ) :
+          echo "404";
+        else :
+          the_title();
+        endif;
+        ?>
+      </h1>
+      <?php
+      if ( is_404() ) :
+        echo "Sorry, the page not found...";
+      endif;
+      ?>
     </div>
   </header>
 

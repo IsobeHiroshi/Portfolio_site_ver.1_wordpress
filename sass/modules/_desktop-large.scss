@@ -72,7 +72,7 @@ body.home {
   Styling for Home button
 ============================== */
 
-a.home-button {
+.home-button {
   font-size: 1.2rem;
   &:hover {
     transform: scale(1.2);
@@ -144,6 +144,48 @@ body.page {
   Styling for Works Page
 ============================== */
 
+div.past-works-main {
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  gap: 20px;
+  article.past_work {
+    div.work-thumbnail {
+      margin-right: 30px;
+      a img:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+      }
+    }
+    div.work-summary {
+      width: 60%;
+      h2.work-name {
+        &:hover {
+          background-color: $accent-color;
+          border-bottom: 6px solid black;
+          transition: all 0.3s ease;
+        }
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
+
+body.single-past_work {
+  div.work-single-wrapper {
+    width: 60%;
+    a.work-url:hover {
+      background-color: $accent-color;
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+    p.open-up-new-window {
+      font-size: 0.9rem;
+    }
+  }
+}

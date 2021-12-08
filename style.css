@@ -45,6 +45,25 @@ body {
 }
 
 /* ==============================
+  Styling for 404 page
+============================== */
+body.error404 header.site-header div.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body.error404 header.site-header div.title-container h1 {
+  margin-left: 10px;
+  padding-left: 20px;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  width: 180px;
+  height: 70px;
+}
+
+/* ==============================
   Styling for front page
 ============================== */
 body.home h1 {
@@ -136,6 +155,24 @@ body.home nav ul li a {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0% 100%;
+}
+
+/* ==============================
+  Styling for Home Button
+============================== */
+.home-button {
+  color: white;
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #c5272d;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 /* ==============================
@@ -267,9 +304,10 @@ div.past-works-main {
 div.past-works-main article.past_work {
   height: 250px;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 div.past-works-main article.past_work div.work-thumbnail {
@@ -279,7 +317,7 @@ div.past-works-main article.past_work div.work-thumbnail {
 
 div.past-works-main article.past_work div.work-thumbnail a img {
   height: 100%;
-  width: auto;
+  width: 140px;
   object-fit: cover;
   box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 0 rgba(255, 255, 255, 0.05);
 }
@@ -287,20 +325,22 @@ div.past-works-main article.past_work div.work-thumbnail a img {
 div.past-works-main article.past_work div.work-summary {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 div.past-works-main article.past_work div.work-summary h2.work-name {
-  margin-top: 0px;
+  margin-top: 10%;
   background-color: black;
   height: 50px;
+  border-bottom: 6px solid #c5272d;
   border-radius: 20px 0;
 }
 
 div.past-works-main article.past_work div.work-summary h2.work-name a {
   display: block;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
   line-height: 50px;
   text-align: center;
@@ -331,20 +371,77 @@ div.past-works-main article.past_work div.summary-footer div.category-wrapper {
 }
 
 /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
-a.home-button {
-  color: white;
-  display: block;
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
+body.single-past_work {
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+body.single-past_work h2 {
+  margin-top: 30px;
+  height: 55px;
+  line-height: 55px;
+  font-weight: 400;
   text-align: center;
+  background-color: black;
+  color: white;
+  border-bottom: 6px solid #c5272d;
+}
+
+body.single-past_work div.work-single-wrapper div.work-single-thumbnail {
+  width: 50%;
+  margin: 60px auto 40px;
+  box-shadow: 0 18px 50px -10px rgba(0, 0, 0, 0.2), 0 0 0 currentColor;
+}
+
+body.single-past_work div.work-single-wrapper div.work-single-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+body.single-past_work div.work-single-wrapper a.work-url {
+  display: block;
+  background-color: black;
+  border-radius: 22px;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
   margin: 0 auto;
-  background-color: #c5272d;
-  border-radius: 15px;
-  text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+body.single-past_work div.work-single-wrapper p.open-up-new-window {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 15px;
+}
+
+body.single-past_work div.work-detail {
+  width: 70%;
+  margin: 0 auto 90px;
+}
+
+body.single-past_work div.work-detail p.work-single-tagline {
+  width: 100%;
+  margin: 60px auto 50px;
+  font-size: 1.4rem;
+}
+
+body.single-past_work div.work-detail p.work-single-description {
+  width: 90%;
+  margin: 50px auto 70px;
+}
+
+body.single-past_work div.work-detail p.work-detail-content {
+  width: 80%;
+  margin: 20px auto 50px;
+}
+
+body.single-past_work div.work-detail h3.work-detail-heading {
+  font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
@@ -371,6 +468,15 @@ a.home-button {
   .site-header h1 {
     margin-left: 50px;
     margin-top: 40px;
+  }
+  /* ==============================
+  Styling for Home Button
+============================== */
+  .home-button {
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.1rem;
   }
   /* ==============================
   Styling for About Page
@@ -400,13 +506,43 @@ a.home-button {
   /* ==============================
   Styling for Works Page
 ============================== */
+  div.past-works-main {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  div.past-works-main article.past_work div.work-summary h2.work-name a {
+    font-size: 0.8rem;
+  }
   /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
-  a.home-button {
-    width: 120px;
-    height: 60px;
-    line-height: 60px;
+  body.single-past_work h2 {
+    margin: 40px 0 50px;
+    height: 65px;
+    line-height: 65px;
+  }
+  body.single-past_work div.work-single-wrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 100px;
+  }
+  body.single-past_work div.work-single-wrapper div.work-single-thumbnail {
+    width: 70%;
+    margin: 40px auto 40px;
+  }
+  body.single-past_work a.work-url {
+    width: 60%;
+  }
+  body.single-past_work div.work-detail {
+    width: 60%;
+    margin: 0 auto;
+  }
+  body.single-past_work div.work-detail p.work-single-tagline {
+    font-size: 1.6rem;
+    margin: 0 auto 50px;
   }
 }
 
@@ -475,10 +611,10 @@ a.home-button {
   /* ==============================
   Styling for Home button
 ============================== */
-  a.home-button {
+  .home-button {
     font-size: 1.2rem;
   }
-  a.home-button:hover {
+  .home-button:hover {
     transform: scale(1.2);
     transition: all 0.5s 0s ease;
   }
@@ -536,8 +672,42 @@ a.home-button {
   /* ==============================
   Styling for Works Page
 ============================== */
+  div.past-works-main {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    gap: 20px;
+  }
+  div.past-works-main article.past_work div.work-thumbnail {
+    margin-right: 30px;
+  }
+  div.past-works-main article.past_work div.work-thumbnail a img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+  div.past-works-main article.past_work div.work-summary {
+    width: 60%;
+  }
+  div.past-works-main article.past_work div.work-summary h2.work-name:hover {
+    background-color: #c5272d;
+    border-bottom: 6px solid black;
+    transition: all 0.3s ease;
+  }
+  div.past-works-main article.past_work div.work-summary h2.work-name a {
+    font-size: 1rem;
+  }
   /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
+  body.single-past_work div.work-single-wrapper {
+    width: 60%;
+  }
+  body.single-past_work div.work-single-wrapper a.work-url:hover {
+    background-color: #c5272d;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  body.single-past_work div.work-single-wrapper p.open-up-new-window {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

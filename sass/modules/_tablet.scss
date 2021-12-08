@@ -33,6 +33,17 @@ body.home {
 }
 
 /* ==============================
+  Styling for Home Button
+============================== */
+
+.home-button {
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.1rem;
+}
+
+/* ==============================
   Styling for About Page
 ============================== */
 
@@ -73,12 +84,49 @@ body.page {
   Styling for Works Page
 ============================== */
 
+div.past-works-main {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  article.past_work {
+    div.work-summary {
+      h2.work-name a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
 /* ==============================
-  Styling for Home Button
+  Styling for Works Single Page
 ============================== */
 
-a.home-button {
-  width: 120px;
-  height: 60px;
-  line-height: 60px;
+body.single-past_work {
+  h2 {
+    margin: 40px 0 50px;
+    height: 65px;
+    line-height: 65px;
+  }
+  div.work-single-wrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 100px;
+    div.work-single-thumbnail {
+      width: 70%;
+      margin: 40px auto 40px;
+    }
+  }
+  a.work-url {
+    width: 60%;
+  }
+  div.work-detail {
+    width: 60%;
+    margin: 0 auto;
+    p.work-single-tagline {
+      font-size: 1.6rem;
+      margin: 0 auto 50px;
+    }
+  }
 }
