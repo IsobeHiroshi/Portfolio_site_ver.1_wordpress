@@ -74,7 +74,7 @@ div.about-field {
 
 body.page {
   div.contact-content {
-    p {
+    p:not(.has-large-font-size) {
       font-size: 1.3rem;
       line-height: 150%;
     }
