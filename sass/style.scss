@@ -12,10 +12,6 @@ Author: Hiroshi Isobe
   @import "modules/tablet";
 }
 
-@media (min-width: 992px) {
-  @import "modules/desktop-small";
-}
-
 @media (min-width: 1200px) {
-  @import "modules/desktop-large";
+  @import "modules/desktop";
 }

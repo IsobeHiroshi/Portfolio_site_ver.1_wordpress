@@ -13,6 +13,10 @@
         <?php
         if ( is_singular( 'past_work' ) ) :
           echo "Works";
+        elseif ( is_category() ) :
+          the_archive_title();
+        elseif ( is_tag() ) :
+          the_archive_title();
         elseif ( is_404() ) :
           echo "404";
         else :
@@ -24,7 +28,7 @@
       if ( is_404() ) :
       ?>
       <p>Sorry, the page not found...</p>
-      <a class="home-button" href="<?php echo home_url(); ?>">HOME</a>
+      <button class="home-button" type="button" onclick="history.back()">BACK</ｂ>
       <?php
       endif;
       ?>

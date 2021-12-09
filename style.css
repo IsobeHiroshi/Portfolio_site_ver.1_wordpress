@@ -199,6 +199,18 @@ div.about-pic-container img {
   height: auto;
 }
 
+div.about-tagline {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.about-tagline p {
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
 div.about-field {
   width: 90%;
   margin: 40px auto 80px;
@@ -215,7 +227,31 @@ div.about-field h2.about-field-title {
 }
 
 div.about-field div.about-field-content {
-  margin-left: 25px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+div.about-field div.about-field-content div.tech-icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  margin: 30px 0 40px;
+}
+
+div.about-field div.about-field-content p.about-field-content-text {
+  line-height: 150%;
+}
+
+div.about-field div.about-field-content a.resume-link {
+  display: inline-block;
+  color: #c5272d;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+div.about-field div.about-field-content p.philosophy-tagline {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 div.about-field div.about-field-content div.career-detail {
@@ -450,6 +486,13 @@ body.single-past_work div.work-detail h3.work-detail-heading {
   font-size: 1.3rem;
 }
 
+/* ==============================
+  Styling for Archive Page
+============================== */
+body.archive {
+  padding-bottom: 100px;
+}
+
 @media (min-width: 768px) {
   /* ==============================
   Styling for front page
@@ -487,8 +530,16 @@ body.single-past_work div.work-detail h3.work-detail-heading {
   /* ==============================
   Styling for About Page
 ============================== */
+  div.about-tagline p {
+    margin: 60px 0;
+    font-weight: bold;
+    font-size: 2rem;
+  }
   div.about-field {
     width: 70%;
+  }
+  div.about-field div.about-field-content p.philosophy-tagline {
+    font-size: 1.7rem;
   }
   div.about-field div.about-field-content div.career-detail {
     width: 80%;
@@ -627,6 +678,10 @@ body.single-past_work div.work-detail h3.work-detail-heading {
   /* ==============================
   Styling for About Page
 ============================== */
+  div.about-tagline p {
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
   div.about-pic-container {
     height: 300px;
     margin-top: 50px;
@@ -637,8 +692,11 @@ body.single-past_work div.work-detail h3.work-detail-heading {
     object-position: 0% 10%;
   }
   div.about-field {
-    width: 60%;
+    width: 50%;
     margin: 70px auto 40px;
+  }
+  div.about-field div.about-field-content p.about-field-content-text {
+    font-size: 1.1rem;
   }
   div.about-field div.about-field-content div.career-detail {
     width: 90%;

@@ -10,11 +10,9 @@
       <span id="title1stRow">HELLO, I AM</span>
       <span id="title2ndRow">HIROSHI</span>
     </h1>
-    <?php if ( is_home() ) : ?>
-      <div class="main-image-container">
-        <img class="main-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/profile.jpg">
-      </div>
-    <?php endif; ?>
+    <div class="main-image-container">
+      <img class="main-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/profile.jpg">
+    </div>
     <?php
       wp_nav_menu( array(
           'theme_location'    =>  'menu-main',
