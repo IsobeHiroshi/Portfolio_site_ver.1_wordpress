@@ -36,9 +36,11 @@ body.error404 {
 ============================== */
 
 body.home {
+  margin: 0;
   h1 {
     font-family: Cinzel;
     text-align: center;
+    margin: 40px 0;
     #title1stRow {
       display: block;
       font-size: 1rem;
@@ -77,9 +79,9 @@ body.home {
         width: 100%;
         height: 100%;
         background-image: url(./images/red-brush-line.png);
-        background-size: 35%;
+        background-size: 30%;
         background-repeat: no-repeat;
-        background-position: 55% 0%;
+        background-position: 53% 0%;
       }
       a {
         text-decoration: none;

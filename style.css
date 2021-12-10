@@ -72,9 +72,14 @@ body.error404 header.site-header div.title-container p {
 /* ==============================
   Styling for front page
 ============================== */
+body.home {
+  margin: 0;
+}
+
 body.home h1 {
   font-family: Cinzel;
   text-align: center;
+  margin: 40px 0;
 }
 
 body.home h1 #title1stRow {
@@ -122,9 +127,9 @@ body.home nav ul li::after {
   width: 100%;
   height: 100%;
   background-image: url(./images/red-brush-line.png);
-  background-size: 35%;
+  background-size: 30%;
   background-repeat: no-repeat;
-  background-position: 55% 0%;
+  background-position: 53% 0%;
 }
 
 body.home nav ul li a {
@@ -508,11 +513,11 @@ body.archive {
   }
   body.home .main-image-container {
     width: 70%;
-    margin: 60px auto 60px;
+    margin: 60px auto 70px;
   }
   body.home nav ul li::after {
-    background-size: 23%;
-    background-position: 53% 0;
+    background-size: 18%;
+    background-position: 52% 0;
   }
   body.home nav ul li a {
     font-size: 1.7rem;
@@ -660,8 +665,8 @@ body.archive {
     height: 70px;
   }
   body.home nav ul li::after {
-    background-size: 110%;
-    background-position: -10% 0%;
+    background-size: 90%;
+    background-position: 100% 0%;
     clip-path: inset(0 100% 0 0);
     transition: all 0.3s 0s ease;
   }

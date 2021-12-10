@@ -42,8 +42,8 @@ body.home {
       width: 160px;
       height: 70px;
       &::after {
-        background-size: 110%;
-        background-position: -10% 0%;
+        background-size: 90%;
+        background-position: 100% 0%;
         clip-path: inset(0 100% 0 0);
         transition: all 0.3s 0s ease;
       }
