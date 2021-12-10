@@ -270,6 +270,7 @@ div.about-field div.about-field-content div.career-detail article.career {
 div.about-field div.about-field-content div.career-detail article.career div.career-thumbnail {
   margin: 0 auto;
   flex-basis: 30%;
+  margin-right: 20px;
 }
 
 div.about-field div.about-field-content div.career-detail article.career div.career-thumbnail a img {
@@ -711,7 +712,7 @@ body.archive {
     font-size: 1.1rem;
   }
   div.about-field div.about-field-content div.career-detail {
-    width: 90%;
+    width: 100%;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 2fr);
