@@ -120,24 +120,21 @@ body.single-past_work {
     line-height: 65px;
   }
   div.work-single-wrapper {
-    display: flex;
-    align-items: center;
     width: 90%;
     margin: 0 auto 100px;
     div.work-single-thumbnail {
-      width: 70%;
+      width: 40%;
       margin: 40px auto 40px;
     }
-  }
-  a.work-url {
-    width: 60%;
+    a.work-url {
+      width: 30%;
+    }
   }
   div.work-detail {
     width: 60%;
     margin: 0 auto;
     p.work-single-tagline {
       font-size: 1.6rem;
-      margin: 0 auto 50px;
     }
   }
 }

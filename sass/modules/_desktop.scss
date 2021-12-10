@@ -188,7 +188,10 @@ div.past-works-main {
 
 body.single-past_work {
   div.work-single-wrapper {
-    width: 60%;
+    width: 70%;
+    div.work-single-thumbnail {
+      width: 30%;
+    }
     a.work-url:hover {
       background-color: $accent-color;
       transform: scale(1.1);
