@@ -252,6 +252,7 @@ div.about-field div.about-field-content a.resume-link {
 div.about-field div.about-field-content p.philosophy-tagline {
   font-weight: bold;
   font-size: 1.3rem;
+  line-height: 150%;
 }
 
 div.about-field div.about-field-content div.career-detail {
