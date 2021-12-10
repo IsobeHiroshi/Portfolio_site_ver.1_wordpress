@@ -115,7 +115,7 @@ div.past-works-main {
 
 body.single-past_work {
   h2 {
-    margin: 40px 0 50px;
+    margin: 40px 0 90px;
     height: 65px;
     line-height: 65px;
   }
@@ -134,7 +134,17 @@ body.single-past_work {
     width: 60%;
     margin: 0 auto;
     p.work-single-tagline {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
+      margin: 100px auto 70px;
+    }
+    p.work-single-description {
+      font-size: 1.1rem;
+    }
+    p.work-detail-content {
+      font-size: 1.1rem;
+    }
+    h3.work-detail-heading {
+      font-size: 1.4rem;
     }
   }
 }

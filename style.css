@@ -471,16 +471,19 @@ body.single-past_work div.work-detail p.work-single-tagline {
   width: 100%;
   margin: 60px auto 50px;
   font-size: 1.4rem;
+  line-height: 150%;
 }
 
 body.single-past_work div.work-detail p.work-single-description {
   width: 90%;
   margin: 50px auto 70px;
+  line-height: 150%;
 }
 
 body.single-past_work div.work-detail p.work-detail-content {
   width: 80%;
   margin: 20px auto 50px;
+  line-height: 150%;
 }
 
 body.single-past_work div.work-detail h3.work-detail-heading {
@@ -577,7 +580,7 @@ body.archive {
   Styling for Works Single Page
 ============================== */
   body.single-past_work h2 {
-    margin: 40px 0 50px;
+    margin: 40px 0 90px;
     height: 65px;
     line-height: 65px;
   }
@@ -597,7 +600,17 @@ body.archive {
     margin: 0 auto;
   }
   body.single-past_work div.work-detail p.work-single-tagline {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    margin: 100px auto 70px;
+  }
+  body.single-past_work div.work-detail p.work-single-description {
+    font-size: 1.1rem;
+  }
+  body.single-past_work div.work-detail p.work-detail-content {
+    font-size: 1.1rem;
+  }
+  body.single-past_work div.work-detail h3.work-detail-heading {
+    font-size: 1.4rem;
   }
 }
 
