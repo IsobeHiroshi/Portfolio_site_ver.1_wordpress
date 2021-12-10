@@ -369,6 +369,7 @@ div.past-works-main article.past_work div.work-summary {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  width: 100%;
 }
 
 div.past-works-main article.past_work div.work-summary h2.work-name {
