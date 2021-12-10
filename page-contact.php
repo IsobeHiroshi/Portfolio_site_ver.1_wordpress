@@ -6,7 +6,7 @@
 
   <ul class="contact-icons">
     <li>
-      <span class="fas fa-envelope"></span>
+      <span id="mailIcon" class="fas fa-envelope"></span>
     </li>
     <li>
       <a href="https://github.com/IsobeHiroshi"></a>
