@@ -39,7 +39,7 @@ body.page a[href^="https://dev.to"]::before {
   color: black;
 }
 
-body {
+body:not(.error404) {
   animation: fadeIn 1s ease 0s 1 normal;
   font-family: Roboto;
 }
