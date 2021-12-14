@@ -44,7 +44,7 @@ add_filter('get_the_archive_title','custom_archive_title');
 
 /* Show custom posts on the archive page */
 function tg_include_custom_post_types_in_archive_pages( $query ) {
-    if ( $query->is_main_query() && ! is_admin() && ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) ) {
+    if ( $query->is_main_query() && ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) ) {
         $query->set( 'post_type', array( 'past_work' ) );
     }
 }
