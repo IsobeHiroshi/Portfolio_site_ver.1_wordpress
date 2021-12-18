@@ -1,4 +1,4 @@
-# WMDD4840_finalProject
-Final Project for Langara WMDD 4840 CMS class. Dec, 2021
-
-The wordpress theme for Hiroshi Isobe's portfolio site
+# Hiroshi Isobe Portfolio site ver.1
+- The 1st version of Hiroshi Isobe's portfolio site
+- Original Wordpress theme is used
+- In terms of maintainability and updatability, custom post type and custom fields are used.
