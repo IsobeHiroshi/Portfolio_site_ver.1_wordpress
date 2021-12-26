@@ -240,13 +240,13 @@ div.about-field div.about-field-content div.tech-icons {
   display: flex;
   justify-content: space-between;
   font-size: 2.5rem;
-  margin: 30px 0 20px;
+  margin: 30px 0 30px;
 }
 
 div.about-field div.about-field-content div.tools-icons {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 div.about-field div.about-field-content div.tools-icons img {
@@ -561,7 +561,7 @@ body.archive {
     width: 70%;
   }
   div.about-field div.about-field-content div.tech-icons {
-    margin: 30px 0 30px;
+    margin: 30px auto 40px;
   }
   div.about-field div.about-field-content p.philosophy-tagline {
     font-size: 1.7rem;
@@ -726,6 +726,12 @@ body.archive {
   div.about-field {
     width: 50%;
     margin: 70px auto 40px;
+  }
+  div.about-field div.about-field-content div.tech-icons {
+    width: 80%;
+  }
+  div.about-field div.about-field-content div.tools-icons {
+    width: 80%;
   }
   div.about-field div.about-field-content p.about-field-content-text {
     font-size: 1.1rem;
