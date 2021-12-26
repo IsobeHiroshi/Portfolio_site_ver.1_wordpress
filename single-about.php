@@ -20,6 +20,13 @@
             <i class="fab fa-wordpress"></i>
             <i class="fab fa-php"></i>
         </div>
+        <div class="tools-icons">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/Firebase_icon.svg" alt="firebase">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/Illustrator_icon.svg" alt="illustrator">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/Photoshop_icon.svg" alt="photoshop">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/Figma_icon.svg" alt="figma">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/Premiere_Pro_icon.svg" alt="premiere pro">
+        </div>
         <p class="about-field-content-text"><?php the_field('what_i_can_do'); ?></p>
         <a class="resume-link" href="<?php the_field('resume_url') ?>">My Resume</a>
     </div>
