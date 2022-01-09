@@ -25,7 +25,7 @@ body.page {
     content: "\f08c";
     color: black;
   }
-  a[href^="https://dev.to"]::before
+  a[href^="https://twitter.com"]::before
   {
     display: inline-block;
     font-style: normal;
@@ -33,7 +33,7 @@ body.page {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Brands";
-    content: "\f6cc";
+    content: "\f081";
     color: black;
   }
 }

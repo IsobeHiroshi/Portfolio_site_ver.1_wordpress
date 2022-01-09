@@ -28,14 +28,14 @@ body.page a[href^="https://www.linkedin.com"]::before {
   color: black;
 }
 
-body.page a[href^="https://dev.to"]::before {
+body.page a[href^="https://twitter.com"]::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Brands";
-  content: "\f6cc";
+  content: "\f081";
   color: black;
 }
 

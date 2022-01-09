@@ -15,7 +15,7 @@
       <a href="https://www.linkedin.com/in/hiroshi-isobe/"></a>
     </li>
     <li>
-      <a href="https://dev.to/isobehiroshi"></a>
+      <a href="https://twitter.com/HiroshiIsobe_JP"></a>
     </li>
   </ul>
   <a class="home-button" href="<?php echo home_url(); ?>">HOME</a>
